@@ -44,10 +44,27 @@
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li> -->
                     </ul> 
-                    <form class="d-flex">
+                    <div class="d-flex justify-content-end gap-4">
+                        <button type="button" class="btn border-primary position-relative">
+                            <i class="fa-regular fa-bell fa-xl"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                        <a type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        </a>
+                        <a type="button" class="btn position-relative">
+                            <i class="fa-regular fa-user fa-xl"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <!-- <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -55,6 +72,10 @@
     <main>
         <div class="d-titulo">
             <h1 class="titulo">OFERTAS</h1>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
             <!-- <div class="input-buscar">
                 <input type="search" class="input" placeholder="Busar">
 
@@ -64,36 +85,6 @@
             </div> -->
         </div>
 
-        <!-- <section id="ofertas">
-
-                    <div class="card-group gap-3">
-                        <div class="card ofertaImg" >
-                            <img src="../assets/img/ofertas/oferta1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card ofertaImg">
-                            <img src="../assets/img/ofertas/oferta1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card ofertaImg">
-                            <img src="../assets/img/ofertas/oferta1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-        </section> -->
-        
         <section id="ofertas">
                 <div class="card ofertaImg" >
                     <img src="../assets/img/ofertas/oferta1.jpg" class="card-img-top img-oferta" alt="...">
