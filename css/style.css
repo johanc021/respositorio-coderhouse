@@ -196,7 +196,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1.5fr));
     /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-rows: 30rem 30rem;
+    grid-template-rows: 32rem 32rem;
     gap: 10px;
 }
 
@@ -212,7 +212,7 @@ main {
 }
 
 #ofertas .ofertaImg .img-oferta {
-    width: 400px;
+    width: 270px;
     height: 300px;
     padding: 5px;
     margin: 5px;
