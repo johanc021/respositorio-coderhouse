@@ -1,0 +1,12 @@
+@import './partials/generales.scss';
+@import './partials/nav.scss';
+@import './partials/index/flexIndex.scss';
+@import './partials/ofertas/gridOfertas.scss';
+@import './partials/nosotros/gridNosotros.scss';
+@import './partials/contactenos/gridContactenos.scss';
+@import './partials/mediaQ/mediaQueries';
+
+
+:root {
+    --colorFondo: black;
+}

@@ -1,0 +1,54 @@
+main {
+    width: 87vw;
+    margin: 15px;
+    margin-top: 5px;
+
+    & .carousel-inner h5, p {
+        color: rgb(6, 6, 6);
+    }
+
+    & .d-titulo {
+        /* background-color: aqua; */
+        padding: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        & .titulo {
+            padding: 3px;
+            margin: 2px;
+        }
+    }
+
+    & .tiedasTitulo {
+        padding: 3px;
+        margin: 2px;
+    }
+
+    & .tiendas {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+
+        & .divTienda {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 5px;
+            border-radius: 15px;
+            width: 400px;
+            gap: 10px;
+
+            & .imgTienda {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+            }
+        }
+    }
+}
