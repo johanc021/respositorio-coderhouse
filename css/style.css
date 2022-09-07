@@ -232,7 +232,7 @@ main {
 .ofertaImg{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: #2980B9;
+    /* background-color: #2980B9; */
 }
 .ofertaImg:hover{
     -webkit-transform: translate(1.2%);
