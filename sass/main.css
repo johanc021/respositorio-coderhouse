@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-  background-color: white;
+  background-color: var(--colorNav);
   width: 92vw;
   border-radius: 0px 0px 20px 20px;
   position: fixed;
@@ -468,7 +468,6 @@ main .tiendas .divTienda .imgTienda {
     align-items: center;
   }
 }
-
 :root {
-  --colorFondo: black;
+  --colorNav: #ffffff;
 }/*# sourceMappingURL=main.css.map */

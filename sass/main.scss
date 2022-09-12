@@ -1,12 +1,12 @@
-@import './partials/generales.scss';
-@import './partials/nav.scss';
-@import './partials/index/flexIndex.scss';
-@import './partials/ofertas/gridOfertas.scss';
-@import './partials/nosotros/gridNosotros.scss';
-@import './partials/contactenos/gridContactenos.scss';
+@import './partials/generales';
+@import './partials/nav';
+@import './partials/index/flexIndex';
+@import './partials/ofertas/gridOfertas';
+@import './partials/nosotros/gridNosotros';
+@import './partials/contactenos/gridContactenos';
 @import './partials/mediaQ/mediaQueries';
 
 
 :root {
-    --colorFondo: black;
+    --colorNav: #ffffff;
 }
