@@ -1,3 +1,4 @@
+@import './partials/vars';
 @import './partials/generales';
 @import './partials/nav';
 @import './partials/index/flexIndex';
@@ -7,6 +8,3 @@
 @import './partials/mediaQ/mediaQueries';
 
 
-:root {
-    --colorNav: #ffffff;
-}

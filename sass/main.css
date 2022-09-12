@@ -1,3 +1,7 @@
+:root {
+  --colorNav: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -311,7 +315,7 @@ main .tiendas .divTienda .imgTienda {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: var(--colorNav);
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
@@ -467,7 +471,4 @@ main .tiendas .divTienda .imgTienda {
     justify-content: center;
     align-items: center;
   }
-}
-:root {
-  --colorNav: #ffffff;
 }/*# sourceMappingURL=main.css.map */
