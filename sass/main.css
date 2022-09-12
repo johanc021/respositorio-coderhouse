@@ -253,6 +253,11 @@ main .tiendas .divTienda .imgTienda {
   grid-auto-flow: row;
   /* background-color: #0072ff; */
   grid-template-areas: "descripcion descripcion" "dTituloFormulario dTituloFormulario" "d-formulario d-formulario";
+  /* & .descripcion img {
+      width: 450px;
+      height: auto;
+      border-radius: 7px;
+  } */
 }
 #sectionContactenos .descripcion {
   grid-area: descripcion;
@@ -266,11 +271,6 @@ main .tiendas .divTienda .imgTienda {
 #sectionContactenos .descripcion p {
   padding: 5px;
 }
-#sectionContactenos .descripcion img {
-  width: 450px;
-  height: auto;
-  border-radius: 7px;
-}
 #sectionContactenos .dTituloFormulario {
   grid-area: dTituloFormulario;
   padding: 15px;
@@ -282,32 +282,12 @@ main .tiendas .divTienda .imgTienda {
   padding: 5px;
   margin: 20px;
 }
-#sectionContactenos .d-formulario .formulario {
+#sectionContactenos .d-formulario .d-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#sectionContactenos .d-formulario .formulario label {
-  padding: 5px;
-  margin: 10px;
-}
-#sectionContactenos .d-formulario .formulario label label input {
-  width: 350px;
-  padding: 6px 35px 6px 15px;
-  border-radius: 25px;
-  background-color: transparent;
-}
-#sectionContactenos .d-formulario .formulario label select {
-  width: 350px;
-  height: 40px;
-}
-#sectionContactenos .d-formulario .formulario label textarea {
-  width: 500px;
-  height: 300px;
-  padding: 20px;
-}
-#sectionContactenos .d-formulario .formulario label button {
+#sectionContactenos .d-formulario button {
   background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
   margin: 10px;
   padding: 15px 45px;
@@ -318,9 +298,11 @@ main .tiendas .divTienda .imgTienda {
   color: var(--colorNav);
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#sectionContactenos .d-formulario .formulario label button:hover {
+#sectionContactenos .d-formulario button:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
