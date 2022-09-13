@@ -35,8 +35,13 @@ body {
   height: 22x;
 }
 .navbar .navbar-nav a:hover {
-  border-bottom: 1px solid rgb(33, 13, 148);
-  transition: 0.5s;
+  /* border-bottom: 3px solid #9E9E9E; */
+  padding-bottom: 3px solid #9E9E9E;
+  /* border-top: 3px solid #9E9E9E; */
+  padding-top: 3px solid #9E9E9E;
+  background-color: #EEEEEE;
+  border-radius: 3px 15px 3px 15px;
+  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -284,13 +289,12 @@ main .tiendas .divTienda .imgTienda {
 }
 #sectionContactenos .d-formulario .d-btn {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 #sectionContactenos .d-formulario button {
   background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
   margin: 10px;
-  padding: 15px 45px;
+  padding: 10px 40px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;

@@ -11,8 +11,13 @@
     }
 
     & .navbar-nav a:hover {
-        border-bottom: 1px solid rgb(33, 13, 148);
-        transition: 0.5s;
+        /* border-bottom: 3px solid #9E9E9E; */
+        padding-bottom: 3px solid #9E9E9E;
+        /* border-top: 3px solid #9E9E9E; */
+        padding-top: 3px solid #9E9E9E;
+        background-color: #EEEEEE;
+        border-radius: 3px 15px 3px 15px;
+        transition: .4s;
         cursor: pointer;
-    }
-}
+    }           
+}       
