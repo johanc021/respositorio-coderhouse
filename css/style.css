@@ -8,7 +8,7 @@
 
 body {
     /* background-color: rgb(255, 255, 255); */
-    background-image: url(../assets/body/fondo7.svg);
+    background-image: url(../assets/body/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     /* font-family: 'Montserrat', sans-serif; */
@@ -41,15 +41,15 @@ body {
     cursor: pointer;
 }
 
-.carousel-inner h5, p {
-    color: rgb(6, 6, 6);
-}
-
 main {
     /* background-color: blue; */
     width: 87vw;
     margin: 15px;
     margin-top: 5px;
+}
+
+main .carousel-inner h5, p {
+    color: rgb(6, 6, 6);
 }
 
 .d-titulo {
@@ -66,74 +66,6 @@ main {
     /* background-color: blanchedalmond; */
     padding: 3px;
     margin: 2px;
-}
-
-.input-buscar {
-    position: relative;
-    width: 350px;
-}
-
-.input {
-    box-sizing: border-box;
-    color: #191919;
-    padding: 6px 35px 6px 6px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.input-icon {
-    color: #191919;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/* .d-titulo .buscar {
-    padding: 2px;
-    margin: 3px;
-    width: 30px;
-    height: 48px;
-    margin-right: 20px;
-} */
-
-.slider-container {
-    display: flex;
-    width: 100%;
-    height: 60vh;
-    overflow-x: scroll;
-
-}
-
-.slider-container img {
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    /* scroll-snap-align: center; */
-    scroll-snap-type: x mandatory
-}
-
-.d-promociones {
-   /*  background-color: rgb(135, 231, 175); */
-    padding: 5px;
-    margin: 25px 25px;
-    display: flex;
-    justify-content: center;
-    flex-direction: center;
-    align-items: center;
-}
-
-.d-promociones .imgPromociones {
-    align-content: center;
-}
-
-.d-titulo {
-   /*  background-color: azure; */
-    padding: 5px;
-    margin: 10px;
-
 }
 
 .tiendasTitulo {
@@ -170,31 +102,9 @@ main {
     border-radius: 15px;
 }
 
-/* .footer {
-    background-color: rgb(97, 146, 189);
-    width: 90vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    padding: 15px;
-    margin: 15px;
-}
-
-.footer .descripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
-} */
-
-/*  */
-
 /* Pagina ofertas y tiendas*/
 
-#ofertas {
+#prodOfertas {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1.5fr));
     /* grid-template-columns: 1fr 1fr 1fr; */
@@ -202,7 +112,7 @@ main {
     gap: 10px;
 }
 
-#ofertas .ofertaImg {
+#prodOfertas .ofertaImg {
     /* background: radial-gradient(green, yellow); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -214,7 +124,7 @@ main {
     border-radius: 15px;
 }
 
-#ofertas .ofertaImg .img-oferta {
+#prodOfertas .ofertaImg .img-oferta {
     width: 270px;
     height: 300px;
     padding: 5px;
@@ -222,7 +132,7 @@ main {
     border-radius: 15px;
 }
 
-#ofertas .ofertaImg p {
+#prodOfertas .ofertaImg p {
     font-size: 18px;
     width: 400px;
     height: auto;
@@ -232,12 +142,19 @@ main {
 .ofertaImg{
     -webkit-transition: 1s linear;
     transition: 1s linear;
-    background-color: #2980B9;
+    /* background-color: #2980B9; */
 }
+
 .ofertaImg:hover{
     -webkit-transform: translate(1.2%);
     transform: translate(1.2%);
 }
+
+
+/* #prodOfertas .productoImg {
+    @extend #prodOfertas .ofertaImg;
+    border-radius: 25px;
+} */
 
 
 /* Nosotros */
@@ -380,7 +297,7 @@ main {
 }
 
 
-/* Contactanos */
+/* Contactanos */ Aqui voy
 
 #sectionContactenos {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -477,6 +394,27 @@ main {
     color: #fff;
     text-decoration: none;
 }
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+footer .container-fluid a:hover {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    transition: 1s;
+
+}
+
+footer .container-fluid{
+    width: 800px;
+}
+
+
+
 
 
 
@@ -718,7 +656,6 @@ main {
         justify-content: center;
         align-items: center;
     }
-
 }
 
 
