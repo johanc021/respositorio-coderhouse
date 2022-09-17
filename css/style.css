@@ -8,7 +8,7 @@
 
 body {
     /* background-color: rgb(255, 255, 255); */
-    background-image: url(../assets/body/fondo7.svg);
+    background-image: url(../assets/body/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     /* font-family: 'Montserrat', sans-serif; */
@@ -395,6 +395,27 @@ main .carousel-inner h5, p {
     text-decoration: none;
 }
 
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+footer .container-fluid a:hover {
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    transition: 1s;
+
+}
+
+footer .container-fluid{
+    width: 800px;
+}
+
+
+
+
 
 
 /* Media Queries Header Nav */
@@ -635,7 +656,6 @@ main .carousel-inner h5, p {
         justify-content: center;
         align-items: center;
     }
-
 }
 
 

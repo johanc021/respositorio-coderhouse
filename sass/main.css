@@ -332,6 +332,19 @@ main .tiendas .divTienda .imgTienda {
   text-decoration: none;
 }
 
+footer {
+  background-color: #F2F2F2;
+  border-radius: 15px;
+}
+footer .container-fluid a:hover {
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  transition: 1s;
+}
+footer .container-fluid {
+  width: 800px;
+}
+
 /* Media Queries Header Nav */
 @media (max-width: 1032px) {
   .nav-menu {

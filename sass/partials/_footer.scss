@@ -1,0 +1,15 @@
+footer {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+
+    & .container-fluid a:hover {
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        transition: 1s;
+
+    }
+
+    & .container-fluid{
+        width: 800px;
+    }
+}
