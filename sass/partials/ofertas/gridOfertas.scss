@@ -5,6 +5,7 @@
     grid-template-rows: 32rem 32rem;
     gap: 10px;
 
+    /* Lo mismo que productos extend .productoimg */
     & .ofertaImg {
     /* background: radial-gradient(green, yellow); */
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -15,29 +16,32 @@
         justify-content: center;
         align-items: center;
         border-radius: 15px;
-
+        width: 332px;
+        height: auto;
+        /* Lo mismo que productos extend .img-producto */
         & .img-oferta {
-            width: 270px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             padding: 5px;
             margin: 5px;
             border-radius: 15px;
         }
     }
-
+    /* Lo mismo que productos extend .productoImg p*/
     & .ofertaImg p {
         font-size: 18px;
-        width: 400px;
+        width: 280px;
         height: auto;
         /* margin-top: 10px; */
     }
-    
+   
+    /* Lo mismo que productos extend .productoImg */
     & .ofertaImg{
         -webkit-transition: 1s linear;
         transition: 1s linear;
         /* background-color: #2980B9; */
     }
-
+    /* Lo mismo que productos extend .lo mismo que productoImg:hover*/
     & .ofertaImg:hover{
         -webkit-transform: translate(1.2%);
         transform: translate(1.2%);

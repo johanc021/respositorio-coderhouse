@@ -31,6 +31,14 @@
     }
 }
 
+/* Media Queries Productos */
+
+@media (max-width: 768px) {
+    .d-contenido .contenedorOpciones {  display: grid;
+        display: none;
+    }
+}
+
 /* Media Queries Nosotros */
 
 @media (max-width: 1438px) {
@@ -208,7 +216,10 @@
             align-items: center;
         }
     }
+}
 
-    
-
+@media (max-width: 768px) {
+    footer .mapSitio {
+        display: none;
+    }
 }

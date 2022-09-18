@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/main.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
@@ -79,7 +80,7 @@
     </header>
     <main>
         <div class="d-titulo">
-            <h1 class="titulo">PRODUCTOS</h1>
+            <h1 class="titulo">Productos</h1>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -92,86 +93,217 @@
                 </svg>
             </div> -->
         </div>
-        <div>
+        <div class="d-contenido">
+            <div class="contenedorOpciones">
+                <div class="opciones">
+                    <div class="envio">
+                        <span>Envio gratis</span>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                    </div>
+                    <div class="envio">
+                        <span>Compra Internacional</span>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        </div>
+                    </div>
+                    <div class="costo">
+                        <span>Precio</span>
+                        <span><a href="">precios hasta $ 750.000 (245)</a></span>
+                        <span><a href="">De $ 750.000 a $ 1.000.000 (150)</a></span>
+                        <span><a href="">Mas de $ 1.000.000 (97)</a></span>
+                        <div class="rangoPrecio">
+                            <label for="customRange1" class="form-label">Rango de precio</label>
+                            <input type="range" class="form-range" id="customRange1">
+                        </div>
+                    </div>
+                    <div class="condicion">
+                        <span>Condición</span>
+                        <div class="nuevo">
+                            <span><a href="">Nuevo (245)</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                        <div class="usado">
+                            <span><a href="">Usado (150)</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metodoPago">
+                        <span>Metodo de pago</span>
+                        <div class="credito">
+                            <span><a href="">Credito</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                        <div class="pse">
+                            <span><a href="">PSE</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                        <div class="nequi">
+                            <span><a href="">Nequi</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                        <div class="daviplata">
+                            <span><a href="">Daviplata</a></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section id="prodOfertas">
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda1.jpg" alt="tienda1">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto1.png" alt="tienda1">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda2.jpg" alt="tienda2">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto2.png" alt="tienda2">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda3.jpg" alt="tienda3">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto3.png" alt="tienda3">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda4.jpg" alt="tienda1">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto4.png" alt="tienda1">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda5.jpg" alt="tienda2">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto5.png" alt="tienda2">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="productoImg">
-                    <img class="img-producto" src="../assets/img/tiendas/tienda6.jpg" alt="tienda3">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tempora quis asperiores, voluptatum dolorum praesentium fuga aperiam aliquid repellendus officiis!</p>
+                    <img class="img-producto" src="../assets/img/productos/producto6.png" alt="tienda3">
+                    <div class="card-body">
+                        <h4 class="card-title">$ 560.000"</h4>
+                        <p class="card-text">Monitor gamer de 24"</p>
+                        <div class="d-grid gap-2">
+                            <button class="btn" type="button">Agregar al carro</button>
+                        </div>
+                    </div>
                 </div>             
             </section>
         </div>
     </main>
-    <div class="container my-5">
 
-    <footer class=" text-center text-white">
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="container p-4 pb-0">
-                <section class="mb-4">
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #3b5998;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #55acee;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-twitter"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #dd4b39;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-google"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #ac2bac;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-instagram"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #0082ca;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-linkedin-in"></i>
-                </a>
-                </section>
+
+    <!-- footer -->
+    <div class="container my-5">
+        <footer class=" text-center">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="container p-4 pb-0">
+                    <section class="mb-4">
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-google"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </section>
+                </div>
             </div>
-        </div>
-        <div class="d-flex flex-column text-center p-3" style="background-color: rgb(255, 255, 255);">
-            <span class="text-muted">Copyright &copy; 2010-2022 Tutienda Colombia</span>
-            <span class="text-muted">Carrera 15 Numero 84 - 07 Piso 6, Bogotá D.C., Colombia</span>
-        </div>
-    </footer>
+            <div class="d-flex flex-column justi text-center p-3">
+                <span class="text-muted">Copyright &copy; 2010-2022 Tutienda Colombia</span>
+                <span class="text-muted">Carrera 15 Numero 84 - 07 Piso 6, Bogotá D.C., Colombia</span>
+                <!-- Menu footer -->
+                <div class="mapSitio container mt-3 rounded-pill" style="background-color: white;" >
+                    <ul class="mapaSitio d-flex justify-content-center flex-row mx-auto mt-3 gap-2">
+                        <li class="nav-item">
+                        <a class="nav-link link-dark" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-dark" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/contactenos.html">Contactenos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </footer>
     
     </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
