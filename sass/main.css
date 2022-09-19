@@ -65,20 +65,6 @@ main {
   margin: 15px;
   margin-top: 5px;
   /* Esta parte la lleve al mixin */
-  /* & .d-titulo {
-      background-color: aqua;
-      padding: 5px;
-      margin: 10px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      & .titulo {
-          padding: 3px;
-          margin: 2px;
-      }
-  } */
 }
 main .carousel-inner h5, main p {
   color: rgb(6, 6, 6);
@@ -355,6 +341,7 @@ main .tiendas .divTienda .imgTienda {
   /* background-color: #0072ff; */
   gap: 10px 10px;
   margin: 15px;
+  align-items: center;
   grid-template-areas: "descripcion1 descripcion1 descripcion1 img1" "img2 descripcion2 descripcion2 descripcion2" "titGaleria titGaleria titGaleria titGaleria" "gal1 gal1 gal2 gal3";
 }
 
@@ -373,12 +360,14 @@ main .tiendas .divTienda .imgTienda {
 
 .descripcion1 {
   grid-area: descripcion1;
-  /* background-color: aquamarine; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 5px;
   margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+  border-radius: 25px;
 }
 
 .img2 {
@@ -395,11 +384,15 @@ main .tiendas .divTienda .imgTienda {
 
 .descripcion2 {
   grid-area: descripcion2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 5px;
   margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+  border-radius: 25px;
+  height: 200px;
 }
 
 .titGaleria {

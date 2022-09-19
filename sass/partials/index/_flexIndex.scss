@@ -9,21 +9,6 @@ main {
 
     /* Esta parte la lleve al mixin */
     
-    /* & .d-titulo {
-        background-color: aqua;
-        padding: 5px;
-        margin: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        & .titulo {
-            padding: 3px;
-            margin: 2px;
-        }
-    } */
-
     & .tiedasTitulo {
         padding: 3px;
         margin: 2px;

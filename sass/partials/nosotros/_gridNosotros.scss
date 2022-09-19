@@ -6,6 +6,7 @@
     /* background-color: #0072ff; */
     gap: 10px 10px;
     margin: 15px;
+    align-items: center;
     grid-template-areas:
         "descripcion1 descripcion1 descripcion1 img1"
         "img2 descripcion2 descripcion2 descripcion2"
@@ -30,12 +31,14 @@
 
 .descripcion1 { 
     grid-area: descripcion1;
-    /* background-color: aquamarine; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
     margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    border-radius: 25px;
 }
 
 .img2 { 
@@ -53,11 +56,15 @@
 
 .descripcion2 { 
     grid-area: descripcion2; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
     margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    border-radius: 25px;
+    height: 200px;
     
 }
 
