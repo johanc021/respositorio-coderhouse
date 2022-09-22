@@ -1,0 +1,93 @@
+#sectionContactenos {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    /* background-color: #0072ff; */
+    grid-template-areas:
+    "descripcion descripcion"
+    "dTituloFormulario dTituloFormulario"
+    "d-formulario d-formulario";
+
+    &  .descripcion { 
+        grid-area: descripcion; 
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: stretch;
+        /* background-color: #aaa; */
+        width: 98%;
+    }
+
+    & .descripcion p   {
+        padding: 5px;
+    }
+
+    /* & .descripcion img {
+        width: 450px;
+        height: auto;
+        border-radius: 7px;
+    } */
+
+    & .dTituloFormulario { 
+        grid-area: dTituloFormulario; 
+        padding: 15px;
+        margin: 15px;
+        /* background-color: #fff; */
+    }
+
+    & .d-formulario {
+        grid-area: d-formulario;
+        padding: 5px;
+        margin: 20px;
+
+
+        & .d-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        & button {
+            background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+            margin: 10px;
+            padding: 10px 40px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: var(--colorNav);            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

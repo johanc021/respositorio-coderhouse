@@ -1,0 +1,23 @@
+.navbar {
+    background-color: var(--colorNav);
+    width: 92vw;
+    border-radius: 0px 0px 20px 20px;
+    position: fixed;
+    z-index: 2;
+
+    & .container-fluid .navbar-brand img {
+        width: 180px;
+        height: 22x;
+    }
+
+    & .navbar-nav a:hover {
+        /* border-bottom: 3px solid #9E9E9E; */
+        padding-bottom: 3px solid #9E9E9E;
+        /* border-top: 3px solid #9E9E9E; */
+        padding-top: 3px solid #9E9E9E;
+        background-color: #EEEEEE;
+        border-radius: 3px 15px 3px 15px;
+        transition: .4s;
+        cursor: pointer;
+    }           
+}       

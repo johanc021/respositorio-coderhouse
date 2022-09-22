@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="description" content="Tiendas y supermercados virtuales para comprar los mejores productos al mejor precio y calidad">
+    <meta name="keywords" content="Tienda, Supermercado, Utiles, Aseo, Verduras, Productos, Tecnologia, Zapateria, Producto Hogar, Herramientas, Libros, Productos Quimicos, Ropa, Moda">
     <title>Cuenta</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo2.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +35,7 @@
                             <a class="nav-link" href="./ofertas.html">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./tiendas.html">Tiendas</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -43,11 +46,33 @@
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li> -->
-                    </ul> 
-                    <form class="d-flex">
+                    </ul>
+                    <div class="d-flex justify-content-end gap-4">
+                        <button type="button" class="btn border-primary position-relative">
+                            <i class="fa-regular fa-bell fa-xl"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                4
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                        <a type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                7
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </a>
+                        <!-- <a type="button" class="btn position-relative">
+                            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                        </a> -->
+                        <a type="button" class="btn position-relative">
+                            <i class="fa-regular fa-user fa-xl"></i>
+                        </a>
+                    </div> 
+                    <!-- <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
@@ -81,57 +106,82 @@
             </section>
         </div>
     </main>
+    <!-- footer -->
     <div class="container my-5">
-
-    <footer class=" text-center text-white">
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="container p-4 pb-0">
-                <section class="mb-4">
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #3b5998;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #55acee;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-twitter"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #dd4b39;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-google"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #ac2bac;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-instagram"></i>
-                </a>
-                <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #0082ca;"
-                    href="#!"
-                    role="button"
-                    ><i class="fab fa-linkedin-in"></i>
-                </a>
-                </section>
+        <footer class=" text-center">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="container p-4 pb-0">
+                    <section class="mb-4">
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-google"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                        class="btn btn-primary btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="#!"
+                        role="button"
+                        ><i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </section>
+                </div>
             </div>
-        </div>
-        <div class="d-flex flex-column text-center p-3" style="background-color: rgb(255, 255, 255);">
-            <span class="text-muted">Copyright &copy; 2010-2022 Tutienda Colombia</span>
-            <span class="text-muted">Carrera 15 Numero 84 - 07 Piso 6, Bogotá D.C., Colombia</span>
-        </div>
-    </footer>
+            <div class="d-flex flex-column justi text-center p-3">
+                <span class="text-muted">Copyright &copy; 2010-2022 Tutienda Colombia</span>
+                <span class="text-muted">Carrera 15 Numero 84 - 07 Piso 6, Bogotá D.C., Colombia</span>
+                <!-- Menu footer -->
+                <div class="mapSitio container mt-3 rounded-pill" style="background-color: white;" >
+                    <ul class="mapaSitio d-flex justify-content-center flex-row mx-auto mt-3 gap-2">
+                        <li class="nav-item">
+                        <a class="nav-link link-dark" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/ofertas.html">Ofertas</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-dark" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="./pages/contactenos.html">Contactenos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="./pages/blog.html">Blog</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </footer>
     
     </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
