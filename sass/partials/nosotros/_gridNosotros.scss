@@ -1,145 +1,132 @@
 .sectionNosotros {  
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    /* background-color: #0072ff; */
-    gap: 10px 10px;
-    margin: 15px;
-    align-items: center;
-    grid-template-areas:
-        "descripcion1 descripcion1 descripcion1 img1"
-        "img2 descripcion2 descripcion2 descripcion2"
-        "titGaleria titGaleria titGaleria titGaleria"
-        "gal1 gal1 gal2 gal3";
-
-}
-
-.img1 { 
-    grid-area: img1;
-    display: flex;
+    display: grid;  
+    grid-template-columns: 400px 400px 450px; 
+    grid-template-rows: 300px 0.1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    padding: 5px; 
     justify-content: center;
-    align-items: center;
-    padding: 5px;
-
-    & img {
-        width: 350px;
-        height: auto;
-        border-radius: 15px;
-    }
-}
-
-.descripcion1 { 
-    grid-area: descripcion1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    border-radius: 25px;
-}
-
-.img2 { 
-    grid-area: img2; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & img {
-        width: 600px;
-        width: 500px;
-        border-radius: 15px;
-    }
-}
-
-.descripcion2 { 
-    grid-area: descripcion2; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 5px;
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    border-radius: 25px;
-    height: 200px;
+    grid-template-areas: 
+        "descripcion descripcion video"
+        "gal-titulo gal-titulo gal-titulo"
+        "f-principal f-principal f-1"
+        "f-principal f-principal f-2"
+        "f-3 f-4 f-5";
     
 }
 
-.titGaleria { 
-    /* background-color: #0072ff; */
-    grid-area: titGaleria; 
+.descripcion { 
+    grid-area: descripcion; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.video { 
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.gal-titulo { 
+    grid-area: gal-titulo; 
+    /* background-color: aqua; */
+    padding: 15px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+
+.f-principal { 
+    grid-area: f-principal; 
     padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.gal1 { 
-    grid-area: gal1; 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    & img {
-        width: 80%;
-        height: auto;
-    }
+    width: 100%;
+    height: auto;
 }
 
-.gal2 { 
-    grid-area: gal2; 
+.f-principal img{
+    width: 780px;
+    height: auto;
+}
+
+.f-1 { 
+    grid-area: f-1; 
+    padding: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3px;
-
-    & .gal2-img1 {
-        width: 20vw;
-        height: auto;
-        padding: 3px;
-        margin: 15px;
-    }
+    
 }
 
-.gal3 { 
-    grid-area: gal3;
-    /* background-color: #0072ff; */ 
-    margin: 3px;
+.f-1 .f1-img {
+    width: 100%;
+    height: auto;
+}
+
+.f-2 { 
+    grid-area: f-2; 
+    padding: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 3px;
+    align-items: center;
+    
+}
 
+.f-2 .f2-img {
+    width: 100%;
+    height: auto;
+}
 
-    & .gal3Img1 {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        margin: 5px;
+.f-3 { 
+    grid-area: f-3; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        & .gal3-img1 {
-            width: 80%;
-            height: auto;
-        }
-    }
+.f-3 .f3-img {
+    width: 100%;
+    height: auto;
+}
 
-    & .gal3Img2 {
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-        margin: 5px;
+.f-4 { 
+    grid-area: f-4;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
-        & .gal3-img2 {
-            width: 80%;
-            height: auto;
-        }
-    }
+.f-4 .f4-img {
+    width: 100%;
+    height: auto;
 }
 
 
+.f-5 { 
+    grid-area: f-5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.f-5 .f5-img {
+    width: 100%;
+    height: auto;
+}

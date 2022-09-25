@@ -34,148 +34,110 @@
 /* Media Queries Productos */
 
 @media (max-width: 768px) {
-    .d-contenido .contenedorOpciones {  display: grid;
+    .d-contenido .contenedorOpciones {  
+        display: grid;
         display: none;
     }
 }
 
 /* Media Queries Nosotros */
 
-@media (max-width: 1438px) {
+@media (max-width: 1360px) {
     .sectionNosotros {
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            "img1 img1 img1 img1"
-            "descripcion1 descripcion1 descripcion1 descripcion1"
-            "img2 img2 img2 img2"
-            "descripcion2 descripcion2 descripcion2 descripcion2"
-            "titGaleria titGaleria titGaleria titGaleria"
-            "gal1 gal1 gal2 gal2"
-            "gal3 gal3 gal3 gal3";
-    }
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "descripcion descripcion descripcion"
+            "video video video"
+            "gal-titulo gal-titulo gal-titulo"
+            "f-principal f-principal f-principal"
+            "f-1 f-1 f-1"
+            "f-2 f-2 f-2"
+            "f-3 f-4 f-5";
+            /* background-color: aqua; */
 
-    .img1 img {
-        width: 400px;
-        height: auto;
-    }
+            & .video iframe {
+                width: 700px;
+                height: 300px;
+            }
 
-    .img2 img {
-        width: 400px;
-        height: auto;
+            & .f-principal img{
+                width: 780px;
+                height: auto;
+            }
+
+            & .f-1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            & .f-1 img {
+                width: 780px;
+                height: auto;
+            }
+
+            & .f-2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            & .f-2 img {
+                width: 780px;
+            }
     }
-    
-    .gal3 {
-        display: flex;
-        flex-direction: row;
-    }
-    
 }
 
-@media (max-width: 1190px){
-    .sectionNosotros {
-        grid-template-areas:
-            "img1 img1 img1 img1"
-            "descripcion1 descripcion1 descripcion1 descripcion1"
-            "img2 img2 img2 img2"
-            "descripcion2 descripcion2 descripcion2 descripcion2"
-            "titGaleria titGaleria titGaleria titGaleria"
-            "gal1 gal1 gal1 gal1"
-            "gal2 gal2 gal2 gal2"
-            "gal3 gal3 gal3 gal3";
-    }
+@media (max-width: 855px){
+   .sectionNosotros {
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "descripcion descripcion descripcion"
+            "video video video"
+            "gal-titulo gal-titulo gal-titulo"
+            "f-principal f-principal f-principal"
+            "f-1 f-1 f-1"
+            "f-2 f-2 f-2"
+            "f-3 f-3 f-3"
+            "f-4 f-4 f-4"
+            "f-5 f-5 f-5";
+            /* background-color: aqua; */
 
+        & .video iframe {
+            width: 400px;
+            height: 300px;
+        }
 
-    .img1 img {
-        width: 400px;
-        height: auto;
-
-    }
-
-    .img2 img {
-        width: 400px;
-        height: auto;
-
-    }
-
-    .gal1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .gal2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .gal3 {
-        display: flex;
-        flex-direction: row;
-
-    }
-
-}
-
-@media (max-width: 990px) {
-    .sectionNosotros {
-        grid-template-areas:
-            "img1 img1 img1 img1"
-            "descripcion1 descripcion1 descripcion1 descripcion1"
-            "img2 img2 img2 img2"
-            "descripcion2 descripcion2 descripcion2 descripcion2"
-            "titGaleria titGaleria titGaleria titGaleria"
-            "gal1 gal1 gal1 gal1"
-            "gal2 gal2 gal2 gal2"
-            "gal3 gal3 gal3 gal3";
-    }
-
-    .img1 img {
-        width: 400px;
-        height: auto;
-    }
-
-    .img2 img {
-        width: 400px;
-        height: auto;
-    }
-
-    .gal1 {
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .gal2 {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        & .gal2-img1{
+        & .f-principal img{
             width: 400px;
             height: auto;
         }
-    }
 
-    .gal3 {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
+        & .f-1 {
+            display: flex;
+            justify-content: center;
+        }
 
+        & .f-1 img {
+            position: relative;
+            width: 400px;
+            height: auto;
+        }
+
+        & .f-2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .f-2 img {
+            width: 400px;
+        }
     }
 }
 
 /* Media Queries Contactanos */
 
-@media (max-width: 768px){
+@media (max-width: 1054px){
 
     #sectionContactenos .descripcion { 
         grid-area: descripcion; 
@@ -184,7 +146,13 @@
         align-items: center;
         justify-content: stretch;
         width: 98%;
+
+        & .mapouter {
+            margin-bottom: 15px;
+        }
     }
+
+    
 
     .d-formulario .formulario textarea {
         width: 400px;

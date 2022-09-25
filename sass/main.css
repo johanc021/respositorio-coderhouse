@@ -335,129 +335,124 @@ main .tiendas .divTienda .imgTienda {
 
 .sectionNosotros {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  /* background-color: #0072ff; */
-  gap: 10px 10px;
-  margin: 15px;
-  align-items: center;
-  grid-template-areas: "descripcion1 descripcion1 descripcion1 img1" "img2 descripcion2 descripcion2 descripcion2" "titGaleria titGaleria titGaleria titGaleria" "gal1 gal1 gal2 gal3";
+  grid-template-columns: 400px 400px 450px;
+  grid-template-rows: 300px 0.1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  padding: 5px;
+  justify-content: center;
+  grid-template-areas: "descripcion descripcion video" "gal-titulo gal-titulo gal-titulo" "f-principal f-principal f-1" "f-principal f-principal f-2" "f-3 f-4 f-5";
 }
 
-.img1 {
-  grid-area: img1;
+.descripcion {
+  grid-area: descripcion;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
+  font-size: 24px;
+  font-family: "Jost", sans-serif;
+  background-color: #F2F2F2;
+  border-radius: 10px;
 }
-.img1 img {
-  width: 350px;
+
+.video {
+  grid-area: video;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
   height: auto;
-  border-radius: 15px;
 }
 
-.descripcion1 {
-  grid-area: descripcion1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 5px;
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  border-radius: 25px;
+.gal-titulo {
+  grid-area: gal-titulo;
+  /* background-color: aqua; */
+  padding: 15px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
 }
 
-.img2 {
-  grid-area: img2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img2 img {
-  width: 600px;
-  width: 500px;
-  border-radius: 15px;
-}
-
-.descripcion2 {
-  grid-area: descripcion2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 5px;
-  margin: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  border-radius: 25px;
-  height: 200px;
-}
-
-.titGaleria {
-  /* background-color: #0072ff; */
-  grid-area: titGaleria;
+.f-principal {
+  grid-area: f-principal;
   padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.gal1 {
-  grid-area: gal1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.gal1 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
-.gal2 {
-  grid-area: gal2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 3px;
-}
-.gal2 .gal2-img1 {
-  width: 20vw;
+.f-principal img {
+  width: 780px;
   height: auto;
-  padding: 3px;
-  margin: 15px;
 }
 
-.gal3 {
-  grid-area: gal3;
-  /* background-color: #0072ff; */
-  margin: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 3px;
-}
-.gal3 .gal3Img1 {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  margin: 5px;
-}
-.gal3 .gal3Img1 .gal3-img1 {
-  width: 80%;
-  height: auto;
-}
-.gal3 .gal3Img2 {
-  display: flex;
-  justify-content: center;
+.f-1 {
+  grid-area: f-1;
   padding: 10px;
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.gal3 .gal3Img2 .gal3-img2 {
-  width: 80%;
+
+.f-1 .f1-img {
+  width: 100%;
+  height: auto;
+}
+
+.f-2 {
+  grid-area: f-2;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-2 .f2-img {
+  width: 100%;
+  height: auto;
+}
+
+.f-3 {
+  grid-area: f-3;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-3 .f3-img {
+  width: 100%;
+  height: auto;
+}
+
+.f-4 {
+  grid-area: f-4;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-4 .f4-img {
+  width: 100%;
+  height: auto;
+}
+
+.f-5 {
+  grid-area: f-5;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-5 .f5-img {
+  width: 100%;
   height: auto;
 }
 
@@ -483,6 +478,17 @@ main .tiendas .divTienda .imgTienda {
   justify-content: stretch;
   /* background-color: #aaa; */
   width: 98%;
+}
+#sectionContactenos .descripcion .mapouter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-right: 25px;
+}
+#sectionContactenos .descripcion .mapouter iframe {
+  width: 400px;
+  height: 387px;
 }
 #sectionContactenos .descripcion p {
   padding: 5px;
@@ -570,93 +576,71 @@ footer .container-fluid {
   }
 }
 /* Media Queries Nosotros */
-@media (max-width: 1438px) {
+@media (max-width: 1360px) {
   .sectionNosotros {
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "img1 img1 img1 img1" "descripcion1 descripcion1 descripcion1 descripcion1" "img2 img2 img2 img2" "descripcion2 descripcion2 descripcion2 descripcion2" "titGaleria titGaleria titGaleria titGaleria" "gal1 gal1 gal2 gal2" "gal3 gal3 gal3 gal3";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "descripcion descripcion descripcion" "video video video" "gal-titulo gal-titulo gal-titulo" "f-principal f-principal f-principal" "f-1 f-1 f-1" "f-2 f-2 f-2" "f-3 f-4 f-5";
+    /* background-color: aqua; */
   }
-  .img1 img {
-    width: 400px;
+  .sectionNosotros .video iframe {
+    width: 700px;
+    height: 300px;
+  }
+  .sectionNosotros .f-principal img {
+    width: 780px;
     height: auto;
   }
-  .img2 img {
-    width: 400px;
-    height: auto;
-  }
-  .gal3 {
+  .sectionNosotros .f-1 {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+  }
+  .sectionNosotros .f-1 img {
+    width: 780px;
+    height: auto;
+  }
+  .sectionNosotros .f-2 {
+    display: flex;
+    justify-content: center;
+  }
+  .sectionNosotros .f-2 img {
+    width: 780px;
   }
 }
-@media (max-width: 1190px) {
+@media (max-width: 855px) {
   .sectionNosotros {
-    grid-template-areas: "img1 img1 img1 img1" "descripcion1 descripcion1 descripcion1 descripcion1" "img2 img2 img2 img2" "descripcion2 descripcion2 descripcion2 descripcion2" "titGaleria titGaleria titGaleria titGaleria" "gal1 gal1 gal1 gal1" "gal2 gal2 gal2 gal2" "gal3 gal3 gal3 gal3";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "descripcion descripcion descripcion" "video video video" "gal-titulo gal-titulo gal-titulo" "f-principal f-principal f-principal" "f-1 f-1 f-1" "f-2 f-2 f-2" "f-3 f-3 f-3" "f-4 f-4 f-4" "f-5 f-5 f-5";
+    /* background-color: aqua; */
   }
-  .img1 img {
+  .sectionNosotros .video iframe {
+    width: 400px;
+    height: 300px;
+  }
+  .sectionNosotros .f-principal img {
     width: 400px;
     height: auto;
   }
-  .img2 img {
-    width: 400px;
-    height: auto;
-  }
-  .gal1 {
+  .sectionNosotros .f-1 {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .gal2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .gal3 {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 990px) {
-  .sectionNosotros {
-    grid-template-areas: "img1 img1 img1 img1" "descripcion1 descripcion1 descripcion1 descripcion1" "img2 img2 img2 img2" "descripcion2 descripcion2 descripcion2 descripcion2" "titGaleria titGaleria titGaleria titGaleria" "gal1 gal1 gal1 gal1" "gal2 gal2 gal2 gal2" "gal3 gal3 gal3 gal3";
-  }
-  .img1 img {
+  .sectionNosotros .f-1 img {
+    position: relative;
     width: 400px;
     height: auto;
   }
-  .img2 img {
-    width: 400px;
-    height: auto;
-  }
-  .gal1 {
-    width: auto;
-    height: auto;
+  .sectionNosotros .f-2 {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-  .gal2 {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .gal2 .gal2-img1 {
+  .sectionNosotros .f-2 img {
     width: 400px;
-    height: auto;
-  }
-  .gal3 {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
   }
 }
 /* Media Queries Contactanos */
-@media (max-width: 768px) {
+@media (max-width: 1054px) {
   #sectionContactenos .descripcion {
     grid-area: descripcion;
     display: flex;
@@ -664,6 +648,9 @@ footer .container-fluid {
     align-items: center;
     justify-content: stretch;
     width: 98%;
+  }
+  #sectionContactenos .descripcion .mapouter {
+    margin-bottom: 15px;
   }
   .d-formulario .formulario textarea {
     width: 400px;
