@@ -542,6 +542,17 @@ footer .container-fluid {
   width: auto;
 }
 
+section .sitioConstruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+section .sitioConstruccion img {
+  width: 100%;
+  height: auto;
+}
+
 /* Media Queries Header Nav */
 @media (max-width: 1032px) {
   .nav-menu {
