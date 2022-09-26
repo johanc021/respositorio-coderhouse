@@ -1,0 +1,193 @@
+/* Media Queries Header Nav */
+
+@media (max-width: 1032px) {
+    .nav-menu {
+        grid-template-areas: 
+            "d-logo nav-botones nav-botones"; 
+    }
+
+    .nav-botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px;
+        margin-right: 15%;
+
+        & .linkNav {
+            display: none;
+        }
+
+        & .menuH {
+            display: contents;
+        }
+
+        & .menuH img {
+            width: 30px;
+            height: 48px;
+            padding: 2px;
+            border: 7px;
+        }
+    }
+}
+
+/* Media Queries Productos */
+
+@media (max-width: 768px) {
+    .d-contenido .contenedorOpciones {  
+        display: grid;
+        display: none;
+    }
+}
+
+/* Media Queries Nosotros */
+
+@media (max-width: 1360px) {
+    .sectionNosotros {
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "descripcion descripcion descripcion"
+            "video video video"
+            "gal-titulo gal-titulo gal-titulo"
+            "f-principal f-principal f-principal"
+            "f-1 f-1 f-1"
+            "f-2 f-2 f-2"
+            "f-3 f-4 f-5";
+            /* background-color: aqua; */
+
+            & .video iframe {
+                width: 700px;
+                height: 300px;
+            }
+
+            & .f-principal img{
+                width: 780px;
+                height: auto;
+            }
+
+            & .f-1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            & .f-1 img {
+                width: 780px;
+                height: auto;
+            }
+
+            & .f-2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            & .f-2 img {
+                width: 780px;
+            }
+    }
+}
+
+@media (max-width: 855px){
+   .sectionNosotros {
+        grid-template-columns: auto auto auto; 
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+            "descripcion descripcion descripcion"
+            "video video video"
+            "gal-titulo gal-titulo gal-titulo"
+            "f-principal f-principal f-principal"
+            "f-1 f-1 f-1"
+            "f-2 f-2 f-2"
+            "f-3 f-3 f-3"
+            "f-4 f-4 f-4"
+            "f-5 f-5 f-5";
+            /* background-color: aqua; */
+
+        & .video iframe {
+            width: 400px;
+            height: 300px;
+        }
+
+        & .f-principal img{
+            width: 400px;
+            height: auto;
+        }
+
+        & .f-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .f-1 img {
+            position: relative;
+            width: 400px;
+            height: auto;
+        }
+
+        & .f-2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        & .f-2 img {
+            width: 400px;
+        }
+    }
+}
+
+/* Media Queries Contactanos */
+
+@media (max-width: 1054px){
+
+    #sectionContactenos .descripcion { 
+        grid-area: descripcion; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+        width: 98%;
+
+        & .mapouter {
+            margin-bottom: 15px;
+        }
+    }
+
+    
+
+    .d-formulario .formulario textarea {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+
+/* Media Queries footer */
+
+@media (max-width: 1040px) {
+    .footer {
+        grid-template-rows: 30px;
+        grid-template-areas: 
+        "descripcion descripcion"
+        "rs rs"; 
+    }
+
+    .footer .descripcion {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .rs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer .mapSitio {
+        display: none;
+    }
+}

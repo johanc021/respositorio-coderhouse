@@ -1,0 +1,132 @@
+.sectionNosotros {  
+    display: grid;  
+    grid-template-columns: 400px 400px 450px; 
+    grid-template-rows: 300px 0.1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    padding: 5px; 
+    justify-content: center;
+    grid-template-areas: 
+        "descripcion descripcion video"
+        "gal-titulo gal-titulo gal-titulo"
+        "f-principal f-principal f-1"
+        "f-principal f-principal f-2"
+        "f-3 f-4 f-5";
+    
+}
+
+.descripcion { 
+    grid-area: descripcion; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.video { 
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.gal-titulo { 
+    grid-area: gal-titulo; 
+    /* background-color: aqua; */
+    padding: 15px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+
+.f-principal { 
+    grid-area: f-principal; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.f-principal img{
+    width: 780px;
+    height: auto;
+}
+
+.f-1 { 
+    grid-area: f-1; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.f-1 .f1-img {
+    width: 100%;
+    height: auto;
+}
+
+.f-2 { 
+    grid-area: f-2; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.f-2 .f2-img {
+    width: 100%;
+    height: auto;
+}
+
+.f-3 { 
+    grid-area: f-3; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-3 .f3-img {
+    width: 100%;
+    height: auto;
+}
+
+.f-4 { 
+    grid-area: f-4;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.f-4 .f4-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.f-5 { 
+    grid-area: f-5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-5 .f5-img {
+    width: 100%;
+    height: auto;
+}
